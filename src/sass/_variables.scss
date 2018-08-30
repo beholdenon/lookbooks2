@@ -1,0 +1,74 @@
+// project specific
+$site-width: 100%;
+$contained-max-width: 1440px;
+
+// colors
+$body-color: #000;
+$body-bg: #fff;
+$black: #000;
+$site-red: #e84260;
+
+// nav 
+$hamburger-icon-color: #000;
+$side-nav-zindex: 5554;
+$sticky-header-zindex: 5555;
+$sticky-header-height:54px;
+
+//typography
+$site-font-family: 'Avenir W01', Helvetica, Arial, sans-serif;
+$headings-margin-bottom: .3em;
+$paragraph-margin-bottom: 1em;
+$font-family-base: 'Avenir W01', Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$font-weight-base: normal;
+$line-height-base: 1em;
+$dt-font-weight: normal;
+$font-family-monospace: "Courier New", sans-serif;
+$label-margin-bottom: $paragraph-margin-bottom;
+
+// links
+$link-color: $black;
+$link-decoration: none;
+$link-hover-color: $black;
+$link-hover-decoration: underline;
+
+$table-cell-padding: 0;
+$table-cell-padding: 0;
+$table-caption-color: $black;
+
+// grid overrides
+$content-well-max-width: $contained-max-width;
+
+
+/*
+// colors
+$site-red: #e84260;
+
+// nav 
+$hamburger-icon-color: #000;
+$side-nav-zindex: 9998;
+$sticky-header-zindex: 9999;
+$sticky-header-height:54px;
+
+$site-font-family: 'Avenir W01', Helvetica, Arial, sans-serif;
+$nav-font-family: 'Oswald', sans-serif;
+
+// container widths
+$container-width: 1440px;
+$site-width: 100%;
+
+// variables for feature
+$small-feature-height: 220px;
+$small-feature-bg-height: 150px;
+$small-feature-bg-top: ($small-feature-height - $small-feature-bg-height)/2;
+
+$medium-feature-height: 430px;
+$medium-feature-bg-height: 310px;
+$medium-feature-bg-top: ($medium-feature-height - $medium-feature-bg-height)/2;
+  
+$large-feature-height: 675px;
+$large-feature-bg-height: 460px;
+$large-feature-bg-top: ($large-feature-height - $large-feature-bg-height)/2;
+*/
+
+

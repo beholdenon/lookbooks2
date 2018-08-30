@@ -1,0 +1,85 @@
+// mixins
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@mixin test-borders() {
+  //border: 1px solid #ff0000;
+}
+@mixin avenir($weight) {
+  $font-family: "Avenir LT W01 55 Roman";
+  @if $weight == "black" {
+    $font-family: "Avenir LT W01 95 Black";
+  }
+  @else if $weight == "heavy" {
+    $font-family: "Avenir LT W01 85 Heavy";
+  }
+  @else if $weight == "medium" {
+    $font-family: "Avenir LT W01 65 Medium";
+  }
+  @else if $weight == "roman" {
+    $font-family: "Avenir LT W01 55 Roman";
+  }
+  @else if $weight == "book" {
+   $font-family: "Avenir LT W01 45 Book";
+  }
+  @else if $weight == "light" {
+    $font-family: "Avenir LT W01 35 Light";
+  }
+  @else {
+     $font-family: "Avenir LT W01 55 Roman";
+  }
+  font-family: $font-family;
+}
+@mixin baskerville($weight) {
+  $font-weight: 400;
+  @if $weight == "regular" {
+    $font-weight: 400;
+  }
+  @else if $weight == "bold" {
+    $font-weight: 700;
+  }
+  font-weight: $font-weight;
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+/* Hover */
+
+@mixin hover {
+  &:hover { @content; }
+}
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin plain-hover-focus {
+  &,
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-active {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+/* Images */
+
+@mixin img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+

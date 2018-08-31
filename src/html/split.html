@@ -143,6 +143,10 @@
 		<script>
 			$(function() {
 				var activeSection;
+
+				
+
+
 				// set the section 
 				function setSection(id) {
 					if(activeSection != id) {
@@ -217,6 +221,19 @@
 						}
 					}
 				}
+				var sheet = (function() {
+					// Create the <style> tag
+					var style = document.createElement('style');
+					
+					// WebKit hack :(
+					style.appendChild(document.createTextNode(''));
+
+					// Add the <style> element to the page
+					document.head.appendChild(style);
+
+					return style.sheet;
+				})();
+				//sheet.insertRule("div { background: #000; }", 0);
 				function node(type, obj, content) {
 					if(!type) return "";
 					var node = $("<" + type + "/>", obj);
